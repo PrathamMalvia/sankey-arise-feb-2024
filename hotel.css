@@ -9,6 +9,7 @@ body {
     padding: 0;
     justify-content: center;
     background-color: #EFEFEF;
+    font-family: "Poppins", sans-serif;
 }
 
 /* header */
@@ -100,4 +101,83 @@ body {
     border: none;
     border-top: 1px solid #A6A6A6;
     margin: 10px 0;
+}
+
+/* Container */
+.main-container {
+    width: 80%;
+    margin: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border: 2px solid black;
+}
+
+.main-container .left-column {}
+
+.main-container .right-column {}
+
+/* Hotel */
+.hotel {
+    display: flex;
+    width: 519px;
+    height: 576px;
+    background-color: pink;
+}
+
+.hotel .hotel-images {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 8px;
+}
+
+.hotel-info {
+    margin: 25px 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hotel-info .reviews {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 8px;
+}
+
+.hotel-info .location {
+    margin: 25px 0;
+}
+
+.location .location-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.location ul {
+    font-size: small;
+}
+
+.location ul li {
+    font-size: small;
+    margin: 10px 20px;
+}
+
+.services span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+/* Hotel */
+.booking-details {
+    display: flex;
+    width: 519px;
+    height: 576px;
+    background-color: pink;
 }
