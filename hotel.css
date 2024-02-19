@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-color: #EFEFEF;
+}
+
+/* header */
+.header {
+    width: 80%;
+    margin: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#header-input {
+    width: 500px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.logo-and-input {
+    display: flex;
+    align-items: center;
+}
+
+.logo-and-input input[type="text"] {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.logo-and-input img {
+    width: 20px;
+    height: 20px;
+    margin-left: -30px;
+}
+
+.header-input {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons {
+    display: flex;
+    margin-left: 30px;
+}
+
+.header-icons img {
+    margin-right: 20px;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.profile-account {
+    display: flex;
+}
+
+.account {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* tabs */
+
+.tabs button {
+    width: 120px;
+    margin: 10px;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #A6A6A6;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #A6A6A6;
+}
+
+.tabs button:hover {
+    background-color: #07689F;
+    color: #FFFFFF;
+}
+
+.tabs {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.horizontal-line {
+    border: none;
+    border-top: 1px solid #A6A6A6;
+    margin: 10px 0;
+}
