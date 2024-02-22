@@ -75,7 +75,6 @@ body {
 }
 
 /* tabs */
-
 .tabs button {
     width: 120px;
     margin: 10px;
@@ -120,6 +119,10 @@ body {
 }
 
 .main-container .right-column {}
+
+section {
+    border-radius: 8px;
+}
 
 /* Hotel */
 .hotel {
@@ -260,3 +263,42 @@ body {
     margin-top: 20px;
     padding: 10px;
 }
+
+/* payment */
+.payment {
+    width: 519px;
+    height: 519px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+    background-color: #FFFFFF;
+}
+
+.price-summary {
+    margin: 30px 0;
+    border-bottom: 1px solid black;
+    border-radius: 2px;
+}
+
+.price-summary .original-price, .price-summary .discount, .price-summary .total-payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 5px 0;
+}
+
+.cancellation {
+    margin: 10px 0;
+}
+
+.pay-part {
+    margin: 10px 0;
+}
+
+/* Hide the default radio button */
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
