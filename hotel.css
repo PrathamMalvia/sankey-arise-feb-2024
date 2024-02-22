@@ -98,7 +98,6 @@ body {
 }
 
 .horizontal-line {
-    border: none;
     border-top: 1px solid #A6A6A6;
     margin: 10px 0;
 }
@@ -114,7 +113,11 @@ body {
     border: 2px solid black;
 }
 
-.main-container .left-column {}
+.main-container .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
 .main-container .right-column {}
 
@@ -123,7 +126,7 @@ body {
     display: flex;
     width: 519px;
     height: 576px;
-    background-color: pink;
+    background-color: #FFFFFF;
 }
 
 .hotel .hotel-images {
@@ -137,7 +140,6 @@ body {
     margin: 25px 20px;
     display: flex;
     flex-direction: column;
-
 }
 
 .hotel-info .reviews {
@@ -158,12 +160,11 @@ body {
     gap: 8px;
 }
 
-.location ul {
-    font-size: small;
-}
 
 .location ul li {
+    color: gray;
     font-size: small;
+    line-height: 10px;
     margin: 10px 20px;
 }
 
@@ -174,10 +175,88 @@ body {
     margin: 10px 0;
 }
 
-/* Hotel */
+/* booking-details */
 .booking-details {
-    display: flex;
     width: 519px;
-    height: 576px;
-    background-color: pink;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #FFFFFF;
+}
+
+.check-in-check-out {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 50px;
+}
+
+.check-in, .check-out {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-left: 1px solid #07689F;
+    border-radius: 2px;
+}
+
+.booking-details ul {
+    font-size: small;
+    line-height: 20px;
+    padding: 16px;
+}
+
+/* the-room */
+.the-room {
+    width: 519px;
+    height: 273px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #FFFFFF;
+}
+
+.guest {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.cleanliness {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.room-buttons-1, .room-buttons-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.room-buttons-1 button, .room-buttons-2 button {
+    background-color: #E8F5E4;
+    border: 1px solid #4C9839;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.room-buttons-1 button {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.room-buttons-2 button {
+    width: 230px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
 }
