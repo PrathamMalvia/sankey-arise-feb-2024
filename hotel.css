@@ -89,7 +89,7 @@ body {
 
 .tabs {
     display: flex;
-    margin: 10px;
+    margin: 1%;
     justify-content: center;
 }
 
@@ -104,7 +104,6 @@ body {
     margin: 2% 10%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 10px 0;
     border: 2px solid black;
 }
@@ -115,7 +114,11 @@ body {
     gap: 12px;
 }
 
-.main-container .right-column {}
+.main-container .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
 section {
     border-radius: 8px;
@@ -123,9 +126,9 @@ section {
 
 /* Hotel */
 .hotel {
-    display: flex;
     width: 519px;
     height: 576px;
+    display: flex;
     background-color: #FFFFFF;
 }
 
@@ -299,7 +302,7 @@ input[type="radio"] {
     height: 20px;
 }
 
-/*payment-method*/
+/* payment-method */
 .payment-methods {
     width: 519px;
     height: 116px;
@@ -314,4 +317,154 @@ input[type="radio"] {
     align-items: center;
     justify-content: space-between;
     margin: 10px 0;
+    cursor: pointer;
+}
+
+/* user info */
+.user-info {
+    width: 642px;
+    height: 280px;
+    padding: 16px;
+
+    background-color: #FFFFFF;
+}
+
+.user-info .image-name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-name .name-history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.user-info .history-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #07689F;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    border: 1px solid #07689F;
+    border-radius: 4px;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.user-info .booking-for {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 24px 0;
+}
+
+.user-info .edit-div {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+
+}
+
+.user-info .edit-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+    color: #07689F;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* full-name */
+.full-name {
+    width: 642px;
+    height: 341px;
+    padding: 16px;
+    background-color: #FFFFFF;
+}
+
+.full-name .input-fullName {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 4px;
+    margin: 10px 0;
+}
+
+.full-name .input-fullName input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding: 1%;
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+/*email*/
+
+.full-name .email-phone {
+    display: flex;
+    width: 90%;
+    gap: 4px;
+    margin: 20px 0;
+}
+
+.full-name .email-phone .email {
+    width: 66.666%;
+}
+
+.full-name .email-phone .phone {
+    width: 33.334%;
+}
+
+.full-name .email-phone .email input[type="email"] {
+    width: 100%;
+    height: 40px;
+    margin: 4px 0;
+    padding: 1%;
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+.full-name .email-phone .phone input[type="tel"] {
+    width: 100%;
+    height: 40px;
+    margin: 4px 0;
+    padding: 1%;
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+.full-name .assistance {
+    width: 66.666%;
+}
+
+.full-name .option-region {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.full-name .option-region .option, .full-name .option-region .region {
+    display: flex;
+    flex-direction: column;
+    width: 33.334%;
+}
+
+.full-name .option-region .option select, .full-name .option-region .region input[type="text"] {
+    width: 100%;
+    height: 40px;
+    margin: 4px 0;
+    padding: 1%;
+    border-radius: 2px;
+    border: 1px solid gray;
 }
