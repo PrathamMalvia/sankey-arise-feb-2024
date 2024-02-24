@@ -468,3 +468,84 @@ input[type="radio"] {
     border-radius: 2px;
     border: 1px solid gray;
 }
+
+
+/* add-story */
+.add-stay {
+    width: 642px;
+    height: 1049px;
+    background-color: #FFFFFF;
+    background-color: pink;
+}
+
+
+/* bank-card-info */
+.bank-card-info {
+    width: 642px;
+    height: 275px;
+    padding: 16px;
+    background-color: #FFFFFF;
+}
+
+.bank-card-info .card-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.bank-card-info .card-info .card-holder-div {
+    width: 30%;
+}
+
+.bank-card-info .card-info .card-number-div {
+    width: 40%;
+}
+
+.bank-card-info .card-info .expiry-date-div {
+    width: 12%;
+}
+
+.bank-card-info .card-info .cvv-div {
+    width: 8%;
+}
+
+.bank-card-info .card-info input[type="text"] {
+    width: 100%;
+    height: 40px;
+    margin: 4px 0;
+    padding: 2%;
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+.bank-card-info .bank-buttons {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bank-card-info .bank-buttons .save-button {
+    width: 40%;
+    height: 48px;
+    background-color: #FFFFFF;
+    color: #07689F;
+    border: 1px solid #07689F;
+    border-radius: 4px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.bank-card-info .bank-buttons .payment-button {
+    width: 40%;
+    height: 48px;
+    background-color: #07689F;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font-weight: 800;
+    cursor: pointer;
+}

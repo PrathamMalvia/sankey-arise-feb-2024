@@ -139,6 +139,7 @@
                 </ul>
             </section>
 
+            <!-- The Room -->
             <section class="the-room">
                 <h4 style="font-weight: 800;">The Room : <span style="font-weight: 500;">Superior Twin Room</span></h4>
                 <div class="guest">
@@ -165,7 +166,7 @@
 
             </section>
 
-            <!-- payment -->
+            <!-- Payment -->
             <section class="payment">
                 <h2 style="font-weight: 800;">Payment Information</h2>
                 <div class="price-summary">
@@ -214,6 +215,7 @@
             </section>
 
 
+            <!-- Payment methods-->
             <section class="payment-methods">
                 <h3 style="font-weight: 800;">Payment Methods </h3>
 
@@ -235,6 +237,7 @@
         <!-- right -->
         <div class="right-column">
 
+            <!-- user-info -->
             <section class="user-info">
                 <div class="image-name">
                     <img src="assets/user-info/anna.svg" alt="">
@@ -269,6 +272,7 @@
                 </div>
             </section>
 
+            <!-- full-name -->
             <section class="full-name">
                 <label for="fullName" style="font-size: small; font-weight: 900;">Full Name</label>
                 <br>
@@ -302,7 +306,7 @@
                         <select name="options" id="options">
                             <option value="">Not Provided</option>
                             <option value="option1">option1</option>
-                            <option value="option1">option1</option>
+                            <option value="option2">option2</option>
                         </select>
                     </div>
                     <div class="region">
@@ -311,8 +315,44 @@
                     </div>
                 </div>
             </section>
-            
 
+            <!-- Add to your stay -->
+            <section class="add-stay">
+
+            </section>
+
+            <section class="bank-card-info">
+                <h3 style="font-weight: 800;">Bank Card Information </h3>
+                <div class="card-info">
+                    <div class="card-holder-div">
+                        <label for="card-holder" style="font-size: smaller; font-weight: 600;">Full Name On The
+                            Card</label>
+                        <input type="text" id="card-holder" name="card-holder" placeholder="Anna Carinna" required>
+                    </div>
+
+                    <div class="card-number-div">
+                        <label for="card-number" style="font-size: smaller; font-weight: 600;">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="💳................"
+                            maxlength="16" required>
+                    </div>
+
+                    <div class="expiry-date-div">
+                        <label for="expiry-date" style="font-size: smaller; font-weight: 600;">Exp Date</label>
+                        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YYYY"
+                            pattern="(?:0[1-9]|1[0-2])/[0-9]{4}" required>
+                    </div>
+
+                    <div class="cvv-div">
+                        <label for="cvv" style="font-size: smaller; font-weight: 600;">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="***" maxlength="3" required>
+                    </div>
+                </div>
+
+                <div class="bank-buttons">
+                    <button class="save-button">Save in Shortcut 💌</button>
+                    <button class="payment-button">Payment</button>
+                </div>
+            </section>
         </div>
     </div>
 
