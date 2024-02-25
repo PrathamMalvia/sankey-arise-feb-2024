@@ -473,9 +473,32 @@ input[type="radio"] {
 /* add-story */
 .add-stay {
     width: 642px;
-    height: 1049px;
+    height: auto;
+    padding: 16px;
     background-color: #FFFFFF;
-    background-color: pink;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.textarea-container {
+    position: relative;
+    display: inline-block;
+}
+
+textarea {
+    padding: 10px;
+    width: 100%;
+    resize: none;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
