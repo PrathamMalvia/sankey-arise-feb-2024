@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid black;
 }
 
 #header-input {
@@ -93,11 +94,6 @@ body {
     justify-content: center;
 }
 
-.horizontal-line {
-    border-top: 1px solid #A6A6A6;
-    margin: 10px 0;
-}
-
 /* Container */
 .main-container {
     width: 80%;
@@ -111,13 +107,15 @@ body {
 .main-container .left-column {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+    justify-content: space-between;
 }
 
 .main-container .right-column {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+    justify-content: space-between;
 }
 
 section {
@@ -127,7 +125,7 @@ section {
 /* Hotel */
 .hotel {
     width: 519px;
-    height: 576px;
+    height: auto;
     display: flex;
     background-color: #FFFFFF;
 }
@@ -181,7 +179,7 @@ section {
 /* booking-details */
 .booking-details {
     width: 519px;
-    height: 300px;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -214,7 +212,7 @@ section {
 /* the-room */
 .the-room {
     width: 519px;
-    height: 273px;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -267,11 +265,10 @@ section {
 /* payment */
 .payment {
     width: 519px;
-    height: 519px;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 16px;
-
     background-color: #FFFFFF;
 }
 
@@ -305,7 +302,7 @@ input[type="radio"] {
 /* payment-method */
 .payment-methods {
     width: 519px;
-    height: 116px;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -323,9 +320,8 @@ input[type="radio"] {
 /* user info */
 .user-info {
     width: 642px;
-    height: 280px;
+    height: auto;
     padding: 16px;
-
     background-color: #FFFFFF;
 }
 
@@ -376,7 +372,6 @@ input[type="radio"] {
     display: flex;
     align-items: center;
     gap: 6px;
-    padding: 10px;
     color: #07689F;
     background-color: #FFFFFF;
     border: none;
@@ -386,7 +381,7 @@ input[type="radio"] {
 /* full-name */
 .full-name {
     width: 642px;
-    height: 341px;
+    height: auto;
     padding: 16px;
     background-color: #FFFFFF;
 }
@@ -451,7 +446,7 @@ input[type="radio"] {
     align-items: center;
     width: 90%;
     justify-content: space-between;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .full-name .option-region .option, .full-name .option-region .region {
@@ -470,7 +465,7 @@ input[type="radio"] {
 }
 
 
-/* add-story */
+/* add-stay */
 .add-stay {
     width: 642px;
     height: auto;
@@ -505,7 +500,7 @@ textarea {
 /* bank-card-info */
 .bank-card-info {
     width: 642px;
-    height: 275px;
+    height: auto;
     padding: 16px;
     background-color: #FFFFFF;
 }
@@ -545,7 +540,7 @@ textarea {
 
 .bank-card-info .bank-buttons {
     width: 100%;
-    margin: 40px 0;
+    margin: 4% 0 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -572,3 +567,42 @@ textarea {
     font-weight: 800;
     cursor: pointer;
 }
+
+
+/* easy-set24-apps */
+.easy-set24-apps {
+    width: 80%;
+    margin: 4% 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.easy-set24-apps .easy-set24-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.easy-set24-apps .easy-set24-img {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.easy-set24-apps .easy-set24-img .apple {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4%;
+}
+
+.easy-set24-apps .easy-set24-img .google {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4%;
+}
+
+
