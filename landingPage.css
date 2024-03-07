@@ -503,3 +503,128 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
     z-index: 1;
 }
+
+
+
+/* easy-set24-apps */
+.easy-set24-apps {
+    width: 80%;
+    margin: 4% 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.easy-set24-apps .easy-set24-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.easy-set24-apps .easy-set24-img {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+}
+
+.easy-set24-apps .easy-set24-img .apple {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    gap: 10%;
+}
+
+.easy-set24-apps .easy-set24-img .google {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    gap: 10%;
+}
+
+
+/* about-us */
+.about-us {
+    width: 80%;
+    margin: 4% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us div {
+    display: flex;
+}
+
+.about-us div ul li {
+    list-style: none;
+    line-height: 200%;
+    color: #565656;
+}
+
+/* pay-social */
+.pay-social {
+    width: 80%;
+    margin: 4% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pay-social .pay-img {
+    width: 30%;
+    display: flex;
+    gap: 4%;
+}
+
+.pay-social .social-img {
+    width: 12%;
+    display: flex;
+    gap: 20%;
+}
+
+.pay-social .footer-email {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.pay-social .footer-email div #footer-input-email {
+    width: 80%;
+    height: 200%;
+    padding: 3%;
+    border: 1px solid #565656;
+    border-radius: 4px 0 0 4px;
+}
+
+.pay-social .footer-email div #subscribe-button {
+    width: 30%;
+    height: 100%;
+    padding: 3% 3%;
+    border: 1px solid #565656;
+    border-radius: 0 4px 4px 0;
+    background-color: #07689F;
+    color: #FFFFFF;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #D9D9D9;
+}
+
+footer .footer-div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1%;
+    background-color: #D9D9D9;
+    padding: 1% 0;
+}
+
+footer .footer-div div {
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
