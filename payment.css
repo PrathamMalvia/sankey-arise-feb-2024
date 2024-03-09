@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-color: #EFEFEF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+
+    overflow-x: hidden;
+}
+
+
+/* header */
+.header {
+    width: 80%;
+    margin: 1% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-input {
+    width: 500px;
+    height: 40px;
+    border: 1px solid #565656;
+    border-radius: 4px;
+}
+
+.logo-and-input {
+    display: flex;
+    align-items: center;
+}
+
+.logo-and-input input[type="text"] {}
+
+.logo-and-input img {
+    width: 20px;
+    height: 20px;
+    margin-left: -30px;
+}
+
+.header-input {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons {
+    display: flex;
+    margin-left: 30px;
+}
+
+.header-icons img {
+    margin-right: 20px;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.profile-account {
+    display: flex;
+}
+
+.account {
+    display: flex;
+    margin-left: -15px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* Container */
+.main-container {
+    width: 80%;
+    margin: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+
+    height: 700px;
+}
+
+.main-container .left-column {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    width: 45%;
+    height: auto;
+}
+
+.main-container .right-column {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    width: 48%;
+    height: auto;
+}
+
+/* flight-card */
+.flight-card {
+    margin: 6% 0;
+}
+
+.blue-color {
+    background-color: #07689F;
+    color: #F9F9F9;
+    font-size: medium;
+    font-weight: 700;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    border-radius: 8px 8px 0 0;
+
+}
+
+.flight-card .img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+}
+
+
+.flight-card .img-container img {
+    border-radius: 0 0 8px 8px;
+}
+
+.img-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom, rgba(12, 12, 12, 0), #0C0C0CCC);
+    border-radius: 0 0 8px 8px;
+}
+
+.flight-details {
+    width: 100%;
+    padding: 2%;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    align-self: center;
+    z-index: 1;
+}
+
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4% 0;
+    cursor: pointer;
+}
+
+/* default radio button */
+input[type="radio"] {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+input {
+    width: 100%;
+    height: 2.5em;
+    margin: 4px 0;
+    padding: 2%;
+    border-radius: 2px;
+    border: 1px solid #565656;
+}
+
+
+.firstName-lastName-phone {
+    display: flex;
+    gap: 8%;
+    margin: 2% 0;
+}
+
+.firstName-lastName {
+    display: flex;
+    gap: 4%;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+
+}
+
+.card-details .card-number {
+    width: 40%;
+}
+
+.card-details .cvv {
+    width: 20%;
+}
+
+.card-details .exp-date {
+    width: 20%;
+}
+
+
+.bank-buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+.save-button {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #FFFFFF;
+    color: #07689F;
+    border: 1px solid #07689F;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.confirm-button {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #07689F;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
