@@ -11,10 +11,10 @@ body {
     background-color: #EFEFEF;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-
     overflow-x: hidden;
+    font-size: 16px;
+    /* Base font size */
 }
-
 
 /* header */
 .header {
@@ -32,31 +32,13 @@ body {
     border-radius: 4px;
 }
 
-.logo-and-input {
-    display: flex;
-    align-items: center;
-}
-
-.logo-and-input input[type="text"] {}
-
-.logo-and-input img {
-    width: 20px;
-    height: 20px;
-    margin-left: -30px;
-}
-
-.header-input {
-    display: flex;
-    align-items: center;
-}
-
 .header-icons {
     display: flex;
     margin-left: 30px;
 }
 
 .header-icons img {
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .header div {
@@ -169,7 +151,7 @@ input[type="radio"] {
     height: 1.4rem;
 }
 
-input {
+.firstName-lastName-phone input, .card-details input {
     width: 100%;
     height: 2.5em;
     margin: 4px 0;
@@ -219,7 +201,7 @@ input {
 }
 
 .save-button {
-    width: 100%;
+    width: 15rem;
     height: 2.5rem;
     background-color: #FFFFFF;
     color: #07689F;
@@ -230,7 +212,7 @@ input {
 }
 
 .confirm-button {
-    width: 100%;
+    width: 15rem;
     height: 2.5rem;
     background-color: #07689F;
     color: #FFFFFF;
@@ -238,4 +220,401 @@ input {
     border-radius: 4px;
     font-weight: 700;
     cursor: pointer;
+}
+
+
+/* easy-set24-apps */
+.easy-set24-apps {
+    width: 80%;
+    margin: 4% 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.easy-set24-apps .easy-set24-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.easy-set24-apps .easy-set24-img {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+}
+
+.easy-set24-apps .easy-set24-img .apple {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    gap: 10%;
+}
+
+.easy-set24-apps .easy-set24-img .google {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    gap: 10%;
+}
+
+
+/* about-us */
+.about-us {
+    width: 80%;
+    margin: 4% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us div {
+    display: flex;
+}
+
+.about-us div ul li {
+    list-style: none;
+    line-height: 200%;
+    color: #565656;
+}
+
+/* pay-social */
+.pay-social {
+    width: 80%;
+    margin: 4% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pay-social .pay-img {
+    width: 30%;
+    display: flex;
+    gap: 4%;
+}
+
+.pay-social .social-img {
+    width: 12%;
+    display: flex;
+    gap: 20%;
+}
+
+.pay-social .footer-email {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.pay-social .footer-email div #footer-input-email {
+    width: 80%;
+    height: 200%;
+    padding: 3%;
+    border: 1px solid #565656;
+    border-radius: 4px 0 0 4px;
+}
+
+.pay-social .footer-email div #subscribe-button {
+    width: 30%;
+    height: 100%;
+    padding: 3% 3%;
+    border: 1px solid #565656;
+    border-radius: 0 4px 4px 0;
+    background-color: #07689F;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #D9D9D9;
+}
+
+footer .footer-div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1%;
+    background-color: #D9D9D9;
+    padding: 1% 0;
+}
+
+footer .footer-div div {
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+
+
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+
+    body {
+        font-size: calc(14px + 0.5vw);
+    }
+
+    /* Header */
+    .header {
+        width: 90%;
+        margin: 5% 2%;
+        align-items: center;
+    }
+
+    .profile-account .account {
+        display: none;
+    }
+
+    .header-icons {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .profile-account {
+        margin-top: 10px;
+    }
+
+    /* Container */
+    .main-container {
+        width: 90%;
+        margin: 5% auto;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main-container .left-column,
+    .main-container .right-column {
+        width: 100%;
+    }
+
+    /* Flight Card */
+    .blue-color {
+        font-size: small;
+        height: 3rem;
+    }
+
+    .flight-details {
+        padding: 4%;
+    }
+
+    /* Payment Method */
+    .payment-method {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .firstName-lastName-phone {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card-details .card-number,
+    .card-details .cvv,
+    .card-details .exp-date {
+        width: 100%;
+    }
+
+    .bank-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* About Us */
+    .about-us {
+        flex-wrap: wrap;
+    }
+
+    .about-us div {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* Pay Social */
+    .pay-social {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pay-social .pay-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10%;
+    }
+
+    .pay-social .social-img {
+        display: flex;
+        gap: 1rem;
+        margin: 0.5rem 0;
+
+    }
+
+    .pay-social .pay-img img,
+    .pay-social .social-img img {
+        margin: 0.5rem 0;
+    }
+
+    .pay-social .footer-email {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .pay-social .footer-email>div {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pay-social .footer-email input {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+        width: 100vw;
+    }
+
+    footer .footer-div {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    footer .footer-div div {
+        width: auto;
+        height: auto;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+}
+
+
+
+/* For tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+        font-size: calc(16px + 0.4vw);
+    }
+
+    .header {
+        width: 100vw;
+        margin: 0 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .profile-account .account {
+        display: none;
+    }
+
+    #header-input {
+        width: 60%;
+    }
+
+    .logo-and-input {
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .header-icons {
+        display: none;
+        gap: 0.5rem;
+    }
+
+    /* Container */
+    .main-container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2% auto;
+        height: auto;
+    }
+
+    .main-container .left-column,
+    .main-container .right-column {
+        width: 75%;
+        margin: 4% 2%;
+        padding: 2%;
+    }
+
+    /* Flight Card */
+    .blue-color {
+        font-size: medium;
+        height: 4rem;
+    }
+
+    /* Payment Method */
+    .payment-method {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .firstName-lastName-phone {
+        flex-direction: row;
+        gap: 4%;
+    }
+
+    .card-details {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card-details .card-number {
+        width: 45%;
+    }
+
+    .card-details .cvv {
+        width: 20%;
+    }
+
+    .card-details .exp-date {
+        width: 25%;
+    }
+
+    .bank-buttons {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* About Us */
+    .about-us {
+        width: 100vw;
+        margin: 4% 2%;
+    }
+
+    /* Pay Social */
+    .pay-social {
+        width: 75%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .pay-social .pay-img,
+    .pay-social .social-img,
+    .pay-social .footer-email {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    /* Footer */
+    footer .footer-div {
+        width: 100%;
+        text-align: center;
+    }
 }

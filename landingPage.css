@@ -11,8 +11,9 @@ body {
     background-color: #EFEFEF;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-
     overflow-x: hidden;
+    font-size: 16px;
+    /* Base font size */
 }
 
 /* header */
@@ -25,9 +26,9 @@ body {
 }
 
 #header-input {
-    width: 500px;
-    height: 40px;
-    border: 1px solid #565656;
+    width: 35rem;
+    height: 2.5rem;
+    border: 1px solid #D9D9D9;
     border-radius: 4px;
 }
 
@@ -36,12 +37,11 @@ body {
     align-items: center;
 }
 
-.logo-and-input input[type="text"] {}
-
 .logo-and-input img {
-    width: 20px;
-    height: 20px;
-    margin-left: -30px;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: -2rem;
+    cursor: pointer;
 }
 
 .header-input {
@@ -51,11 +51,11 @@ body {
 
 .header-icons {
     display: flex;
-    margin-left: 30px;
+    gap: 1.5rem;
 }
 
 .header-icons img {
-    margin-right: 20px;
+    cursor: pointer;
 }
 
 .header div {
@@ -65,23 +65,28 @@ body {
 
 .profile-account {
     display: flex;
+    gap: 0.5rem;
 }
 
 .account {
     display: flex;
-    margin-left: -15px;
-    align-items: flex-start;
     flex-direction: column;
 }
 
 
 /* tabs */
+.tabs {
+    display: flex;
+    margin: 2% 0;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .tabs button {
     width: 8%;
-    margin: 10px;
-    padding: 8px 16px 8px 16px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     border: 1px solid #A6A6A6;
-    border-radius: 30px;
+    border-radius: 2rem;
     cursor: pointer;
     background-color: #FFFFFF;
     color: #A6A6A6;
@@ -90,12 +95,6 @@ body {
 .tabs button:hover {
     background-color: #07689F;
     color: #FFFFFF;
-}
-
-.tabs {
-    display: flex;
-    margin: 2%;
-    justify-content: center;
 }
 
 /* dream-place-text */
@@ -158,20 +157,25 @@ body {
 .beach-image-section .beach-image-container {
     position: relative;
     width: 100vw;
-    overflow-x: hidden;
+    height: 40rem;
 }
 
 .beach-image-section .beach-image-container img {
     width: 100%;
-    height: 40rem;
-    overflow-x: hidden;
+    height: 100%;
+    overflow: hidden;
+}
+
+.beach-image-content {
+    width: 100vw;
+    text-align: center;
 }
 
 .beach-image-content h2 {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
-    transform: translate(-50%, -400%);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: black;
     font-size: xx-large;
@@ -180,9 +184,9 @@ body {
 
 .beach-image-content button {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
-    transform: translate(-50%, -350%);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #FFFFFF;
     background-color: #07689F;
@@ -196,9 +200,9 @@ body {
 
 .beach-image-content h1 {
     position: absolute;
-    top: 50%;
+    bottom: 10%;
     left: 50%;
-    transform: translate(-50%, 200%);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     font-size: 4rem;
@@ -210,8 +214,6 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 15%;
     z-index: 1;
     pointer-events: none;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
@@ -220,10 +222,10 @@ body {
 /* hotel-tabs */
 .beach-image-section .hotel-tabs {
     width: 80%;
+    margin: 0 10%;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0%;
     display: flex;
     align-items: center;
     gap: 1%;
@@ -257,9 +259,8 @@ body {
 }
 
 .blue-image-section .blue-image-container>img {
-    width: 100%;
+    width: 100vw;
     height: 30rem;
-    transform: scale(1.2);
     border-radius: 0 0 8px 8px;
 }
 
@@ -274,7 +275,7 @@ body {
 .blue-image-container #Amsterdam-card {
     position: absolute;
     top: 30%;
-    left: 83%;
+    left: 75%;
     transform: translate(-50%, -50%);
     border-radius: 4px;
 }
@@ -377,11 +378,11 @@ body {
 }
 
 .hello {
-    width: 45%;
+    width: 50%;
 }
 
 .forest {
-    width: 55%;
+    width: 50%;
 }
 
 .make-a-container .hello img {
@@ -505,7 +506,6 @@ body {
 }
 
 
-
 /* easy-set24-apps */
 .easy-set24-apps {
     width: 80%;
@@ -627,4 +627,442 @@ footer .footer-div div {
     display: flex;
     align-items: center;
     gap: 1%;
+}
+
+
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+
+    body {
+        font-size: calc(14px + 0.5vw);
+    }
+
+    .header {
+        width: 100vw;
+        margin: 1%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .profile-account .account {
+        display: none;
+    }
+
+    #header-input {
+        display: none;
+        width: 40%;
+    }
+
+    .logo-and-input {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-icons {
+        display: none;
+        gap: 0.5rem;
+    }
+
+    .tabs {
+        display: none;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tabs button {
+        width: auto;
+    }
+
+    /* Search Tabs */
+    .search-tabs {
+        flex-wrap: wrap;
+    }
+
+    .search-tabs div {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    /* Beach Image Section */
+    .beach-image-section .beach-image-container img {
+        width: 100vw;
+        height: 20rem;
+    }
+
+    .beach-image-section .beach-image-container {
+        width: 100vw;
+        height: 20rem;
+    }
+
+    .beach-image-content h2 {
+        position: absolute;
+        top: 25%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: black;
+        font-size: medium;
+        font-weight: 800;
+    }
+
+    .beach-image-content button {
+        position: absolute;
+        top: 35%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #07689F;
+        border: none;
+        border-radius: 2px;
+        padding: 0.5rem 1rem;
+        font-size: xx-small;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .beach-image-content h1 {
+        display: none;
+    }
+
+    .beach-image-section .hotel-tabs {
+        width: 90%;
+        margin: 0 2%;
+    }
+
+    /* Blue Image Section */
+    .blue-image-section .blue-image-container>img {
+        display: none;
+        height: 20rem;
+    }
+
+    .blue-image-container #Belgium-card,
+    .blue-image-container #Amsterdam-card,
+    .blue-image-container #NewJersey-card,
+    .blue-image-container #Nepal-card,
+    .blue-image-container #Gothenburg-card {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    /* Special Offers Section */
+    .special-offers-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Make a Comparison */
+    .make-a-comparison .make-a-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .hello,
+    .forest {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    /* Profiles */
+    .profiles-section .profiles-container img {
+        height: 20rem;
+    }
+
+    .profiles-container .profiles-divs {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10%;
+    }
+
+    .profiles-section, .profiles-container {
+        display: none;
+    }
+
+    .profiles-divs {
+        width: 20px;
+        height: max-content;
+    }
+
+    /* Four Images */
+    .four-imgs .four-imgs-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Easy Set24 Apps */
+    .easy-set24-apps {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .easy-set24-apps .easy-set24-text,
+    .easy-set24-apps .easy-set24-img {
+        width: 100%;
+    }
+
+    /* About Us */
+    .about-us {
+        flex-wrap: wrap;
+    }
+
+    .about-us div {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* Pay Social */
+    .pay-social {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pay-social .pay-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10%;
+    }
+
+    .pay-social .social-img {
+        display: flex;
+        gap: 1rem;
+        margin: 0.5rem 0;
+
+    }
+
+    .pay-social .pay-img img,
+    .pay-social .social-img img {
+        margin: 0.5rem 0;
+    }
+
+    .pay-social .footer-email {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .pay-social .footer-email>div {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pay-social .footer-email input {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+        width: 100vw;
+    }
+
+    footer .footer-div {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    footer .footer-div div {
+        width: auto;
+        height: auto;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+}
+
+
+
+/* For tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+        font-size: calc(16px + 0.4vw);
+    }
+
+    .header {
+        width: 100vw;
+        margin: 0 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .profile-account .account {
+        display: none;
+    }
+
+    #header-input {
+        width: 60%;
+    }
+
+    .logo-and-input {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-icons {
+        display: none;
+        gap: 0.5rem;
+    }
+
+    .tabs {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .tabs button {
+        width: auto;
+        padding: 6px 12px;
+        margin: 5px;
+    }
+
+    /* Dream Place Text */
+    .dream-place-text {
+        width: 90%;
+        margin: 2% 5%;
+    }
+
+    /* Search Tabs */
+    .search-tabs {
+        width: 90%;
+        margin: 2% 5%;
+        display: flex;
+        align-items: end;
+    }
+
+    /* Beach Image Section */
+    .beach-image-section .beach-image-container img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .beach-image-content h2 {
+        position: absolute;
+        top: 25%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: black;
+        font-size: xx-large;
+        font-weight: 800;
+    }
+
+    .beach-image-content button {
+        position: absolute;
+        top: 35%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #07689F;
+        border: none;
+        border-radius: 2px;
+        padding: 0.5rem 1rem;
+        font-size: small;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .beach-image-content h1 {
+        position: absolute;
+        bottom: 20%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: xx-large;
+        font-weight: 200;
+    }
+
+    .beach-image-section .hotel-tabs {
+        width: 90%;
+        margin: 0 2%;
+    }
+
+    /* Blue Image Section */
+    .blue-image-section {
+        width: 100vw;
+        margin: 0 2%;
+    }
+
+    .blue-image-section .blue-image-container {
+        width: 100vw;
+        margin: 0 2%
+    }
+
+    /* Special Offers Section */
+    .special-offers-section {
+        width: auto;
+        margin: 3% 2% 2%;
+    }
+
+    /* Make a Comparison */
+    .make-a-comparison {
+        width: auto;
+        margin: 3% 2% 2%;
+
+    }
+
+    /* Profiles */
+    .profiles-divs {
+        width: 100vw;
+    }
+
+    .profile {
+        width: 30%;
+        margin: 1%;
+    }
+
+    .profiles-section .profiles-container img {
+        height: 30rem;
+    }
+
+    /* Four Images */
+    .four-imgs {
+        width: 100%;
+        margin: 2% 1%;
+        padding: 1%;
+    }
+
+    /* Easy Set24 Apps */
+    .easy-set24-apps {
+        width: 90%;
+        justify-content: space-between;
+        margin: 4% 2% 0 2%;
+    }
+
+    /* About Us */
+    .about-us {
+        width: 100vw;
+        margin: 4% 2%;
+    }
+
+    /* Pay Social */
+    .pay-social {
+        width: 75%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .pay-social .pay-img,
+    .pay-social .social-img,
+    .pay-social .footer-email {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    /* Footer */
+    footer .footer-div {
+        width: 100%;
+        text-align: center;
+    }
 }
